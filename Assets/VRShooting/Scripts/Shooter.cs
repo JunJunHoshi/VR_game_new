@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,13 +11,20 @@ public class Shooter : MonoBehaviour
     [SerializeField] ParticleSystem gunParticle;
     [SerializeField] AudioSource gunAudioSource;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private float bulletInterval = 0.5f;
+    // 球の発射
+    void OnEnable()
     {
-        if (Input.GetButtonDown("Fire1")){
-            Shoot();
-        }
+        //2秒後に球を連続で発射させる。
+        InvokeRepeating("Shoot",2.0f,bulletInterval);
     }
+
+    private void OnDisable()
+    {
+        //shoot処理を停止する
+        CancelInvoke("Shoot");
+    }
+
     void Shoot(){
         //プレハブをもとにシーンに球を複製
         Instantiate(bulletPrefab, gunBarrelEnd.position, gunBarrelEnd.rotation);

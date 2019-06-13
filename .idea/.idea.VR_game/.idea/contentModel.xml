@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\ProgramData\Unity\VR_game" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="GoogleVR" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="GvrAdditiveOverlay.shader" t="Include" />
+            <e p="GvrController.shader" t="Include" />
+            <e p="GvrControllerReticle.shader" t="Include" />
+            <e p="GvrReticleShader.shader" t="Include" />
+            <e p="GvrUIOverlay.shader" t="Include" />
+            <e p="GvrUIOverlayFont.shader" t="Include" />
+            <e p="GvrUnlitTextureOverlay.shader" t="Include" />
+            <e p="GvrUnlitTransparentOverlay.shader" t="Include" />
+            <e p="GvrUnlitTransparentOverlayColor.shader" t="Include" />
+            <e p="Video" t="Include">
+              <e p="VideoUnlitShader.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SurvivalShooter_Third-PartyNotice.txt" t="Include" />
+        <e p="TutorialInfo" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ReadmeEditor.cs" t="Include" />
+            </e>
+            <e p="Readme.cs" t="Include" />
+          </e>
+        </e>
+        <e p="VRShooting" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="AutoDestroy.cs" t="Include" />
+            <e p="Bullet.cs" t="Include" />
+            <e p="CameraRotator.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="EnemySpawner.cs" t="Include" />
+            <e p="Example.cs" t="Include" />
+            <e p="GameStateController.cs" t="Include" />
+            <e p="GazeHoldEvent.cs" t="Include" />
+            <e p="PointerInputModule.cs" t="Include" />
+            <e p="RemainTimer.cs" t="Include" />
+            <e p="ResultScore.cs" t="Include" />
+            <e p="SceneChanger.cs" t="Include" />
+            <e p="Score.cs" t="Include" />
+            <e p="Shooter.cs" t="Include" />
+            <e p="SpawnController.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="VR_game.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Jun Hoshikawa\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Jun Hoshikawa\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_VR_game.-1847137874.00" t="ExcludeRecursive" />
+  </component>
+</project>

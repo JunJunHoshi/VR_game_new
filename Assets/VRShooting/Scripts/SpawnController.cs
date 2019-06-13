@@ -32,6 +32,6 @@ public class SpawnController : MonoBehaviour
             timer = 0f;
         }
 
-        
+
     }
 }
