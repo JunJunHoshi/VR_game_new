@@ -12,6 +12,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] Collider enemyCollider; //コライダー
     [SerializeField] Renderer enemyRenderer; //レンダラー
     [SerializeField] int point = 1;
+    [SerializeField] int hp = 1;
+    [SerializeField]  GameObject popupTextPrefab;
     Score score;
 
     AudioSource audioSource; //再生する用のAudioSource
@@ -33,20 +35,35 @@ public class Enemy : MonoBehaviour
 
     }
 
+    
+
     // Update is called once per frame
     void OnHitBullet()
     {   //命中時に音を再生
         audioSource.PlayOneShot(hitClip);
+        --hp;
 
-        //死亡処理
+        if (hp <= 0)
+        {
+            //死亡処理
+            GoDown();
+        }
+        
+    }
+    
+    void OnHitBomb()
+    {
+        audioSource.PlayOneShot(hitClip);
         GoDown();
-
+    
     }
     //死亡処理
     void GoDown()
     {   //スコアを加算
         score.AddScore(point);
 
+        //popuptextの作成
+        CreatePopupText();
         //当たり判定と表示を消す
         enemyCollider.enabled = false;
         enemyRenderer.enabled = false;
@@ -55,6 +72,15 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject, 1f);
 
 
+    }
+
+    void CreatePopupText()
+    {
+        //popuptextのインスタンスを作成
+        var text = Instantiate(popupTextPrefab, transform.position, Quaternion.identity);
+        
+        //popuotextのテキストを作成
+        text.GetComponent<TextMesh>().text = string.Format("-{0}", point);
     }
 
 }

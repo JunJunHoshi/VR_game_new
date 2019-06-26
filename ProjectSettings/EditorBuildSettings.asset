@@ -11,4 +11,19 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/VRShooting/Prefabs/Diorama.unity
     guid: cfaf8235a0e91f941a330b146e8ea3a1
+  - enabled: 1
+    path: Assets/Scenes/Title.unity
+    guid: 2e2750055f9480441809d9ab7640dc75
+  - enabled: 1
+    path: Assets/Scenes/SelectStage.unity
+    guid: 9cf1ea9dafa4db74a9ee250bc5a776bf
+  - enabled: 1
+    path: Assets/Scenes/ShootingStage1.unity
+    guid: 4fd0aedb999c7ac498ed177c68a62b28
+  - enabled: 1
+    path: Assets/Scenes/ShootingStage2.unity
+    guid: a343b0bed68b9eb44bf05a600c081302
+  - enabled: 1
+    path: Assets/Scenes/ShootingStage3.unity
+    guid: 563623639450dc04b98f53195b260d9b
   m_configObjects: {}

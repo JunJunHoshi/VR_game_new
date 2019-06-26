@@ -5,6 +5,29 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Demigiant" t="Include">
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTween.Modules.asmdef" t="Include" />
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Fx Explosion Pack" t="Include">
+          <e p="Script" t="Include">
+            <e p="csDemoScenceControl.cs" t="Include" />
+            <e p="csLightControl.cs" t="Include" />
+            <e p="csMouseOrbit.cs" t="Include" />
+            <e p="DestroyEffect.cs" t="Include" />
+          </e>
+        </e>
         <e p="GoogleVR" t="Include">
           <e p="Shaders" t="Include">
             <e p="GvrAdditiveOverlay.shader" t="Include" />
@@ -33,23 +56,33 @@
         <e p="VRShooting" t="Include">
           <e p="Scripts" t="Include">
             <e p="AutoDestroy.cs" t="Include" />
+            <e p="bigBullet.cs" t="Include" />
+            <e p="BillBoard.cs" t="Include" />
+            <e p="bomb.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="CameraRotator.cs" t="Include" />
+            <e p="CanvasGroupFade.cs" t="Include" />
             <e p="Enemy.cs" t="Include" />
             <e p="EnemySpawner.cs" t="Include" />
             <e p="Example.cs" t="Include" />
             <e p="GameStateController.cs" t="Include" />
             <e p="GazeHoldEvent.cs" t="Include" />
+            <e p="Moveagent.cs" t="Include" />
+            <e p="MoveAgentBunny.cs" t="Include" />
             <e p="PointerInputModule.cs" t="Include" />
+            <e p="PopUpText.cs" t="Include" />
+            <e p="redBullet.cs" t="Include" />
             <e p="RemainTimer.cs" t="Include" />
             <e p="ResultScore.cs" t="Include" />
             <e p="SceneChanger.cs" t="Include" />
             <e p="Score.cs" t="Include" />
             <e p="Shooter.cs" t="Include" />
+            <e p="SlideInOut.cs" t="Include" />
             <e p="SpawnController.cs" t="Include" />
           </e>
         </e>
       </e>
+      <e p="DOTween.Modules.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />

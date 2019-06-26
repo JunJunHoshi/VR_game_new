@@ -24,8 +24,5 @@ public class Bullet : MonoBehaviour
 
         //着弾点に演出も追加
         Instantiate(hitParticlePrefab, transform.position, transform.rotation);
-    
-
-        Destroy(gameObject);
     }
 }
