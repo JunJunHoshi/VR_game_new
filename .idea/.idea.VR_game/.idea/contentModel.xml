@@ -65,6 +65,7 @@
             <e p="Enemy.cs" t="Include" />
             <e p="EnemySpawner.cs" t="Include" />
             <e p="Example.cs" t="Include" />
+            <e p="FlushController.cs" t="Include" />
             <e p="GameStateController.cs" t="Include" />
             <e p="GazeHoldEvent.cs" t="Include" />
             <e p="Moveagent.cs" t="Include" />

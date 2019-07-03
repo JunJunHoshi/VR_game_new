@@ -11,6 +11,7 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject result;     // Result ゲームオブジェクト参照
     [SerializeField] GameObject player;     // PlayerGun ゲームオブジェクト参照
     [SerializeField] GameObject spawners;   // Spawner ゲームオブジェクト参照
+    
 
     // ステートベースクラス
     abstract class BaseState
@@ -122,12 +123,17 @@ public class GameStateController : MonoBehaviour
     // ゲームオーバー表示ステート
     class GameOverState : BaseState
     {
+        
+        GameObject cubes = GameObject.FindWithTag("cubes");
         float timer;
         public GameOverState(GameStateController c) : base(c) { }
         public override void OnEnter()
         {
             // ゲームオーバーを表示
             Controller.gameOver.SetActive(true);
+            Destroy(cubes);
+            
+                
         }
         public override StateAction OnUpdate()
         {
@@ -149,11 +155,13 @@ public class GameStateController : MonoBehaviour
     // リザルト表示ステート
     class ResultState : BaseState
     {
+        GameObject camera = GameObject.FindWithTag("camera");
         public ResultState(GameStateController c) : base(c) { }
         public override void OnEnter()
         {
             // リザルト表示
             Controller.result.SetActive(true);
+            camera.transform.position  = new Vector3(1f,3f,0f);
         }
         public override StateAction OnUpdate() { return StateAction.STATE_ACTION_WAIT; }
     }
@@ -172,7 +180,7 @@ public class GameStateController : MonoBehaviour
             new StartState(this),
             new PlayingState(this),
             new GameOverState(this),
-            new ResultState(this),
+            new ResultState(this)
         };
 
         // 最初の状態の開始処理

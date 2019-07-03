@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2190498908459479158}
   - component: {fileID: 2190498908459479160}
   - component: {fileID: 2190498908459479159}
+  - component: {fileID: 1940768448530552943}
+  - component: {fileID: 2279951183859637571}
   m_Layer: 14
   m_Name: Hellephant
   m_TagString: Untagged
@@ -198,9 +200,43 @@ MonoBehaviour:
   enemyCollider: {fileID: 2190498908459479160}
   enemyRenderer: {fileID: 2190498908200613820}
   point: 10
-  hp: 10
+  hp: 5
   popupTextPrefab: {fileID: 2019607849330272600, guid: fcd8b7fe688738f4981983e28fb6763e,
     type: 3}
+--- !u!114 &1940768448530552943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190498908214213304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ee179a14590c446ae9b9694db2fc37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!195 &2279951183859637571
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2190498908214213304}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 0.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &2190498908214213310
 GameObject:
   m_ObjectHideFlags: 0

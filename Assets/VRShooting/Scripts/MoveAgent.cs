@@ -7,6 +7,8 @@ using UnityEngine.AI;
 
 public class MoveAgent : MonoBehaviour
 {
+    
+        
      NavMeshAgent agent;
      
        
@@ -21,20 +23,24 @@ public class MoveAgent : MonoBehaviour
         
         void Update()
         {
+            
             //目的地に到着したかどうか？
-            if (agent.remainingDistance < 0.5f)
+            if (agent.remainingDistance > 3f)
             {
-                //次の地点に移動
                 GotoNextPoint();
+            }
+            else
+            {
+                agent.SetDestination(transform.position);
             }
 
         }
 
         void GotoNextPoint()
         {
-            
+            GameObject camera = GameObject.FindWithTag("camera");
             //床の移動地点をカメラに
-            var nextPoint = new Vector3(0.1f, 0.0f, 0.1f);
+            var nextPoint = camera.transform.position;
             //ナビメッシュエージェントへ目的地を設定
             agent.SetDestination(nextPoint);
         }

@@ -34,7 +34,7 @@ public class MoveAgentBunny : MonoBehaviour
     {
             
         //床の移動地点をカメラに
-        var nextPoint = new Vector3(Random.Range(0,10), 0.0f, Random.Range(0,10));
+        var nextPoint = new Vector3(Random.Range(0,50), 0.0f, Random.Range(0,50));
         //ナビメッシュエージェントへ目的地を設定
         agent.SetDestination(nextPoint);
     }
